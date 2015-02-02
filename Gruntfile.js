@@ -169,7 +169,8 @@ module.exports = function (grunt) {
       app: {
         ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/index.html'],
-        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
+        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js',
+                  'bower_components/bootstrap/dist/css/bootstrap.css']
       }
     },
 
@@ -362,23 +363,15 @@ module.exports = function (grunt) {
       ]
     },
     less: {
-      dev: {
+      dist: {
         options: {
           paths: ["<%= config.app %>/styles"]
         },
         files: {
           ".tmp/styles/main.css": "<%= config.app %>/styles/*.less"
         }
-      },
-      dist: {
-        options: {
-          paths: ["<%= config.dist %>/styles"]
-        },
-        files: {
-          ".tmp/styles/main.css": "<%= config.dist %>/styles/*.less"
-        }
       }
-    }
+      }
   });
 
 
@@ -395,7 +388,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'replace',
-      'less:dev',
+      'less',
       'autoprefixer',
       'connect:livereload',
       'watch'
@@ -425,11 +418,10 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'less:dist',
+    'less',
     'useminPrepare',
     'concurrent:dist',
     'replace',
-    'less:dist',
     'autoprefixer',
     'concat',
     'cssmin',
