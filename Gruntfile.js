@@ -323,6 +323,16 @@ module.exports = function (grunt) {
           dest: '.tmp/styles/',
           src: '{,*/}*.css'
         }]
+      },
+      glyphicons: {
+        files:[
+          {
+            expand:true,
+            flatten:true,
+            src: 'bower_components/bootstrap/dist/fonts/*',
+            dest: '<%= config.app %>/styles/fonts/'
+          }
+        ]
       }
     },
     replace: {
@@ -351,7 +361,8 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
-        'copy:styles'
+        'copy:styles',
+        'copy:glyphicons'
       ],
       test: [
         'copy:styles'
