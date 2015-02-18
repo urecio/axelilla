@@ -376,10 +376,10 @@ module.exports = function (grunt) {
     less: {
       dist: {
         options: {
-          paths: ["<%= config.app %>/styles"]
+          paths: ['<%= config.app %>/styles']
         },
         files: {
-          ".tmp/styles/main.css": "<%= config.app %>/styles/*.less"
+          '.tmp/styles/main.css': '<%= config.app %>/styles/*.less'
         }
       }
       }
