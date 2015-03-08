@@ -10,10 +10,10 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="bower_components/transition.js/css/animation.css">
     <link rel="stylesheet" href="bower_components/transition.js/css/demo-single-page.css">
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -29,7 +29,6 @@
           <div class="pt-page pt-page-1">
             <section class="stage stage-1">
                 <div class="background container-fluid">
-
                     <div class="rightcloud2"></div>
                     <div class="cloud1"></div>
                     <div class="rightcloud1"></div>
@@ -39,10 +38,6 @@
                     <div class="blue-arrow"></div>
                     <div class="blue-shape"></div>
                     <div class="blue-triangle"></div>
-
-
-
-
                 </div>
                 <a href="#" class="pt-trigger buttonGoToSecondPage" data-animation="11" data-goto="2"><span class="glyphicon glyphicon-chevron-down"></span></a>
             </section>
@@ -50,14 +45,21 @@
 
 
           <div class="pt-page pt-page-2">
-
-              <a href="#" class="pt-trigger buttonGoToFirstPage" data-animation="12" data-goto="1"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
-              <div class="background">
-                <a href=""><div class="col-xs-6"></div></a>
-                <a href=""><div class="col-xs-6"></div></a>
-              </div>
-
+            <section class="stage stage-2">
+                <a href="#" class="pt-trigger buttonGoToFirstPage" data-animation="12" data-goto="1"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                <div class="background container-fluid">
+                    <div class="leftmountains1"></div>
+                    <div class="leftmountains2"></div>
+                    <div class="leftmountains3"></div>
+                    <div class="leftmountains4"></div>
+                    <div class="leftstones"></div>
+                    <div class="rightmountains1"></div>
+                    <div class="rightmountains2"></div>
+                    <div class="rightmountains3"></div>
+                    <div class="rightstone"></div>
+                </div>
+                <a href="#" class="pt-trigger buttonGoToSecondPage" data-animation="11" data-goto="2"><span class="glyphicon glyphicon-chevron-down"></span></a>
+            </section>
           </div>
 
 
@@ -101,11 +103,11 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
+        <script src="bower_components/transition.js/js/transition.js"></script>
         <!-- endbuild -->
 
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="bower_components/transition.js/js/transition.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
