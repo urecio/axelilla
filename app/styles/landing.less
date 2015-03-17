@@ -1,14 +1,9 @@
 @import "bower_components/bootstrap/less/variables.less";
 @import "variables.less";
 @import "bower_components/bootstrap/less/mixins.less";
-
-.background-image-mixin(@url, @alignment: center center){
-  background-image: url(@url);
-  background-position: @alignment;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body{
+  overflow: auto;
 }
-
 .btn-arrow{
   position: absolute;
   text-align:center;
@@ -32,12 +27,6 @@ img{
 section.stage {
   height: 100%;
   width:100%;
-  div {
-    height: 100%;
-    width:100%;
-    bottom: 0;
-  }
-
   .background{
     padding-left: 0;
     padding-right: 0;
@@ -47,100 +36,62 @@ section.stage {
   }
 
 }
-section.stage-1{
-  .background {
-    .background-image-mixin('../images/step1/background.png', top center);
-    background-size:cover;
+.stage-1{
+  images{
+    height: 500px;
   }
-
-    .cloud1{
-      .background-image-mixin('../images/step1/left/leftcloud1.png', bottom left);
-      background-size:52%;
-    }
-    .cloud2{
-      .background-image-mixin('../images/step1/left/leftcloud2.png', bottom left);
-      background-size:59%;
-    }
-    .shape1{
-      .background-image-mixin('../images/step1/left/blue-shape.png', bottom left);
-      background-size:26%;
-    }
-    .shape2{
-      .background-image-mixin('../images/step1/left/shape-green.png', 4% 94%);
-      background-size: 9%;
-    }
-
-
-    .blue-arrow {
-      .background-image-mixin('../images/step1/right/blue-arrow.png', 94% 113%);
-      background-size:30%;
-    }
-    .blue-shape{
-      .background-image-mixin('../images/step1/right/blue-shape.png', bottom right);
-      background-size:26%;
-    }
-    .blue-triangle{
-      .background-image-mixin('../images/step1/right/blue-triangle.png', 100% 92%);
-      background-size:10%;
-    }
-    .rightcloud1{
-      .background-image-mixin('../images/step1/right/rightcloud1.png', bottom right);
-      background-size:43%;
-    }
-    .rightcloud2{
-      .background-image-mixin('../images/step1/right/rightcloud2.png', bottom right);
-      background-size:55%;
-    }
-
+  #nubederecha2 {
+    transform: translate(0px 0px);
+  }
 }
 section.stage-2{
-  .background {
-    .background-image-mixin('../images/main-menu/background.png', top center);
-    background-size:cover;
+/*   .background {
+  .background-image-mixin('../images/main-menu/background.png', top center);
+  background-size:cover;
+}
+
+  .demonhead{
+    .background-image-mixin('../images/main-menu/demonhead.png', bottom left);
+    background-size:52%;
+  }
+  .leftmountains1{
+    .background-image-mixin('../images/main-menu/leftmountains1.png', bottom left);
+    background-size:52%;
+  }
+  .leftmountains2{
+    .background-image-mixin('../images/main-menu/leftmountains2.png', bottom left);
+    background-size:59%;
+  }
+  .leftmountains3{
+    .background-image-mixin('../images/main-menu/leftmountains3.png', bottom left);
+    background-size:26%;
+  }
+  .leftmountains4{
+    .background-image-mixin('../images/main-menu/leftmountains4.png', 4% 94%);
+    background-size: 9%;
+  }
+  .leftstones{
+    .background-image-mixin('../images/main-menu/leftstone.png', 4% 94%);
+    background-size: 9%;
   }
 
-    .demonhead{
-      .background-image-mixin('../images/main-menu/demonhead.png', bottom left);
-      background-size:52%;
-    }
-    .leftmountains1{
-      .background-image-mixin('../images/main-menu/leftmountains1.png', bottom left);
-      background-size:52%;
-    }
-    .leftmountains2{
-      .background-image-mixin('../images/main-menu/leftmountains2.png', bottom left);
-      background-size:59%;
-    }
-    .leftmountains3{
-      .background-image-mixin('../images/main-menu/leftmountains3.png', bottom left);
-      background-size:26%;
-    }
-    .leftmountains4{
-      .background-image-mixin('../images/main-menu/leftmountains4.png', 4% 94%);
-      background-size: 9%;
-    }
-    .leftstones{
-      .background-image-mixin('../images/main-menu/leftstone.png', 4% 94%);
-      background-size: 9%;
-    }
 
-
-    .rightmountains1 {
-      .background-image-mixin('../images/main-menu/rightmountains1.png', 94% 113%);
-      background-size:30%;
-    }
-    .rightmountains2 {
-      .background-image-mixin('../images/main-menu/rightmountains2.png', bottom right);
-      background-size:26%;
-    }
-    .rightmountains3 {
-      .background-image-mixin('../images/main-menu/rightmountains3.png', 100% 92%);
-      background-size:10%;
-    }
-    .rightstone {
-      .background-image-mixin('../images/main-menu/rightstone.png', bottom right);
-      background-size:43%;
-    }
+  .rightmountains1 {
+    .background-image-mixin('../images/main-menu/rightmountains1.png', 94% 113%);
+    background-size:30%;
+  }
+  .rightmountains2 {
+    .background-image-mixin('../images/main-menu/rightmountains2.png', bottom right);
+    background-size:26%;
+  }
+  .rightmountains3 {
+    .background-image-mixin('../images/main-menu/rightmountains3.png', 100% 92%);
+    background-size:10%;
+  }
+  .rightstone {
+    .background-image-mixin('../images/main-menu/rightstone.png', bottom right);
+    background-size:43%;
+  } */
 
 }
 

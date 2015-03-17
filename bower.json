@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~3.2.0",
-    "transition.js": "https://github.com/icodebuster/transition.js.git"
+    "transition.js": "https://github.com/icodebuster/transition.js.git",
+    "skrollr": "~0.6.29"
   }
 }
