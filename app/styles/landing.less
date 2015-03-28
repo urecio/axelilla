@@ -1,9 +1,13 @@
-@import "bower_components/bootstrap/less/variables.less";
-@import "variables.less";
-@import "bower_components/bootstrap/less/mixins.less";
+// COMMONS
+// ==========================================================================
 body{
   overflow: auto;
 }
+// END COMMONS
+// ==========================================================================
+
+// NAVIGATION
+// ==========================================================================
 .btn-arrow{
   position: absolute;
   text-align:center;
@@ -19,88 +23,24 @@ body{
   .btn-arrow;
   top:10%;
 }
-// front section
-img{
-  max-width:100%;
-  max-height: 100%;
-}
+// END NAVIGATION
+// ==========================================================================
+
+// SECTIONS
+// ==========================================================================
+
 section.stage {
-  height: 100%;
-  width:100%;
+  width: 100%;
   .background{
-    padding-left: 0;
-    padding-right: 0;
-    div{
-      position: absolute;
-    }
-  }
-
-}
-.stage-1{
-  images{
-    height: 500px;
-  }
-  #nubederecha2 {
-    transform: translate(0px 0px);
-  }
-}
-section.stage-2{
-/*   .background {
-  .background-image-mixin('../images/main-menu/background.png', top center);
-  background-size:cover;
-}
-
-  .demonhead{
-    .background-image-mixin('../images/main-menu/demonhead.png', bottom left);
-    background-size:52%;
-  }
-  .leftmountains1{
-    .background-image-mixin('../images/main-menu/leftmountains1.png', bottom left);
-    background-size:52%;
-  }
-  .leftmountains2{
-    .background-image-mixin('../images/main-menu/leftmountains2.png', bottom left);
-    background-size:59%;
-  }
-  .leftmountains3{
-    .background-image-mixin('../images/main-menu/leftmountains3.png', bottom left);
-    background-size:26%;
-  }
-  .leftmountains4{
-    .background-image-mixin('../images/main-menu/leftmountains4.png', 4% 94%);
-    background-size: 9%;
-  }
-  .leftstones{
-    .background-image-mixin('../images/main-menu/leftstone.png', 4% 94%);
-    background-size: 9%;
-  }
-
-
-  .rightmountains1 {
-    .background-image-mixin('../images/main-menu/rightmountains1.png', 94% 113%);
-    background-size:30%;
-  }
-  .rightmountains2 {
-    .background-image-mixin('../images/main-menu/rightmountains2.png', bottom right);
-    background-size:26%;
-  }
-  .rightmountains3 {
-    .background-image-mixin('../images/main-menu/rightmountains3.png', 100% 92%);
-    background-size:10%;
-  }
-  .rightstone {
-    .background-image-mixin('../images/main-menu/rightstone.png', bottom right);
-    background-size:43%;
-  } */
-
-}
-
-
-
-.pt-page-2{
-  .background{
-    background-image: url('../images/step2-designs-nature/menuarcanoprueba.jpg');
-    width: 100%;
     height: 100%;
+    .paco(#333);
   }
+
 }
+
+@background-urls: '../images/step-1/background.png',
+                  '../images/step-2/background.png';
+.build-stage-backgrounds(@background-image-urls: @background-urls);
+
+// END SECTIONS
+// ==========================================================================

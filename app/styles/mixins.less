@@ -1,0 +1,18 @@
+.background-image-mixin(@url){
+	background: url(@url) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.paco(@pico){
+	border-color: @pico;
+}
+.build-stage-backgrounds(@background-image-urls) {
+	.for(@background-image-urls); .-each(@url, @i) {
+			.stage-@{i}{
+				height: 3000px;
+				.background {
+					.background-image-mixin(@url);
+				}
+			}
+    }
+}
