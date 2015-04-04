@@ -30,6 +30,7 @@ body{
 // ==========================================================================
 
 section.stage {
+  position: fixed;
   width: 100%;
   .background{
     height: 100%;
@@ -41,6 +42,9 @@ section.stage {
 @background-urls: '../images/step-1/background.png',
                   '../images/step-2/background.png';
 .build-stage-backgrounds(@background-image-urls: @background-urls);
+
+@import "stages/timeline";
+@import "stages/stage-1";
 
 // END SECTIONS
 // ==========================================================================

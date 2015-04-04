@@ -9,7 +9,7 @@
 .build-stage-backgrounds(@background-image-urls) {
 	.for(@background-image-urls); .-each(@url, @i) {
 			.stage-@{i}{
-				height: 3000px;
+				height: 100vh;
 				.background {
 					.background-image-mixin(@url);
 				}
