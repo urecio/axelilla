@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist/web'
   };
 
   // Define the configuration for all the tasks
@@ -382,7 +382,7 @@ module.exports = function (grunt) {
           '.tmp/styles/main.css': '<%= config.app %>/styles/main.less'
         }
       }
-      }
+      },
   });
 
 
