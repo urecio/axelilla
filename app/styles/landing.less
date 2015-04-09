@@ -8,21 +8,7 @@ body{
 
 // NAVIGATION
 // ==========================================================================
-.btn-arrow{
-  position: absolute;
-  text-align:center;
-  font-size: 100px;
-  text-decoration: none;
-  box-shadow: none;
-}
-.buttonGoToSecondPage{
-  .btn-arrow;
-  bottom: 10%;
-}
-.buttonGoToFirstPage{
-  .btn-arrow;
-  top:10%;
-}
+@import "components/arrow-bouncing";
 // END NAVIGATION
 // ==========================================================================
 
@@ -34,11 +20,9 @@ section.stage {
   width: 100%;
   .background{
     height: 100%;
-    .paco(#333);
   }
 
 }
-
 @background-urls: '../images/step-1/background.png',
                   '../images/step-2/background.png';
 .build-stage-backgrounds(@background-image-urls: @background-urls);

@@ -1,18 +1,16 @@
+
 .background-image-mixin(@url){
 	background: url(@url) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
-.paco(@pico){
-	border-color: @pico;
-}
 .build-stage-backgrounds(@background-image-urls) {
-	.for(@background-image-urls); .-each(@url, @i) {
+	.foreach(@array: @background-image-urls, @each-callback: {
 			.stage-@{i}{
 				height: 100vh;
 				.background {
-					.background-image-mixin(@url);
+					.background-image-mixin(@each-element);
 				}
 			}
-    }
+    });
 }
