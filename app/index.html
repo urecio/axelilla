@@ -22,6 +22,7 @@
 
     <div id="timeline">
       <div class="stage-1"></div>
+      <div class="stage-2"></div>
     </div>
 
       <div class="pt-wrapper text-center">
@@ -97,13 +98,13 @@
                   </g>
                   </svg>
 
-                  <div class="arrow bounce"></div>
+                  <div class="arrow bounce" data-toggle="tooltip" data-placement="top" title="Scroll down"></div>
 
                 </div>
             </section>
 
 
-            <section class="stage stage-2">
+            <section class="stage stage-2" data-anchor-target="#timeline .stage-2" data-200-top="transform: translateY(100%)" data-top="transform:translateY(0%)">
                 <div class="background">
 
                 </div>
@@ -115,6 +116,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/skrollr/src/skrollr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
