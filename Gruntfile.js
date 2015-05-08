@@ -245,7 +245,8 @@ module.exports = function (grunt) {
           removeEmptyAttributes: true,
           removeOptionalTags: true,
           removeRedundantAttributes: true,
-          useShortDoctype: true
+          useShortDoctype: true,
+          keepClosingSlash: true
         },
         files: [{
           expand: true,
@@ -311,17 +312,21 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: 'bower_components/bootstrap/less',
-          dest: '<%= config.app %>/styles/',
-          src: 'bootstrap.less'
-        },
-        {
-          expand: true,
-          dot: true,
           cwd: '<%= config.app %>/styles',
           dest: '.tmp/styles/',
           src: '{,*/}*.css'
         }]
+      },
+      bootstrapStyles: {
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/bootstrap/less',
+            dest: '<%= config.app %>/styles/',
+            src: 'bootstrap.less'
+          }
+        ]
       },
       glyphicons: {
         files:[
@@ -360,6 +365,7 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
+        'copy:bootstrapStyles',
         'copy:styles',
         'copy:glyphicons'
       ],
@@ -431,7 +437,6 @@ module.exports = function (grunt) {
     'less',
     'useminPrepare',
     'concurrent:dist',
-    'replace',
     'autoprefixer',
     'concat',
     'cssmin',
