@@ -10,13 +10,22 @@
 </head>
 <body ng-controller="axCtrl">
 
+  <div id="timeline">
+    <div class="nubes"></div>
+    <div class="mountains"></div>
+    <div class="estatua"></div>
+    <div class="digistal"></div>
+    <div class="explosion"></div>
+    <div class="cueva"></div>
+  </div>
+
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
       viewBox="0 0 921.6 5102.4" enable-background="new 0 0 921.6 5102.4" xml:space="preserve"
       data-top="top:0px"
       data--1000-top="top:0px"
       data--2500-top="top:-{{scrollPositions.mountains}}px"
 
-      data--3900-top="top:-{{scrollPositions.mountains}}px"
+      data--3200-top="top:-{{scrollPositions.mountains}}px"
       data--4500-top="top:-{{scrollPositions.estatua}}px"
 
       data--5900-top="top:-{{scrollPositions.estatua+200}}px"
@@ -91,9 +100,10 @@
       </image>
     </g>
     <g
-    data--2000-top="opacity: 0; transform: translateY(200px)"
-    data--3000-top="opacity: 1; transform: translateY(-50px)"
-    data--3900-top="transform: translateY(-70px)"
+    data-anchor-target="#mountains-step"
+    data-500-top="opacity: 0; transform: translateY(200px)"
+    data--1500-top="opacity: 1; transform: translateY(-50px)"
+    data--2400-top="transform: translateY(-70px)"
      id="letras_2_" enable-background="new">
       <g id="to-understand-text_1_" opacity="0.6196">
         <rect x="312.451" y="838.065" fill="none" width="325.17" height="118.535"/>
@@ -107,8 +117,10 @@
       </image>
 
         <g
-        data--2000-top="transform: translateY(0px)"
-        data--2900-top="transform: translateY(-25px)">
+        id="mountains-back"
+        data-anchor-target="#mountains-step"
+        data-top="transform: translateY(100px)"
+        data--2400-top="transform: translateY(-25px)">
           <image
            overflow="visible" width="1286" height="491" id="montañasizquierda3" xlink:href="assets/images/light/10E74ABB3A7D4A54.png"  transform="matrix(0.48 0 0 0.48 0 882.1997)">
         </image>
@@ -119,12 +131,20 @@
         </g>
 
         <g
-        data--2000-top="transform: translateY(0px)"
-        data--2900-top="transform: translateY(-10px)">
-          <image overflow="visible" width="1275" height="498" id="montañasizquierda2_1_" xlink:href="assets/images/light/10E74ABB3A7D4A4D.png"  transform="matrix(0.48 0 0 0.48 0 878.8403)">
-        </image>
-
+        data-anchor-target="#mountains-step"
+        data-500-top="transform: translateY(80px)"
+        data--2400-top="transform: translateY(-10px)"
+        id="mountains-middle-front">
           <image overflow="visible" width="1099" height="345" id="montañasderecha2" xlink:href="assets/images/light/10E74ABB3A7D4A4E.png"  transform="matrix(0.48 0 0 0.48 394.0796 894.6802)">
+          </image>
+        </g>
+
+        <g
+        id="mountains-middle"
+        data-anchor-target="#mountains-step"
+        data-500-top="transform: translateY(60px)"
+        data--2400-top="transform: translateY(-10px)">
+          <image overflow="visible" width="1275" height="498" id="montañasizquierda2_1_" xlink:href="assets/images/light/10E74ABB3A7D4A4D.png"  transform="matrix(0.48 0 0 0.48 0 878.8403)">
         </image>
 
           <image overflow="visible" width="1299" height="551" id="montañasizquierda2" xlink:href="assets/images/light/10E74ABB3A7D4A4C.png"  transform="matrix(0.48 0 0 0.48 0 853.3999)">
@@ -147,9 +167,10 @@
       </image>
     </g>
     <g id="nubes_xA0_Image_1_"
-    data--3500-top="transform: translateY(0px)"
-    data--5000-top="transform: translateY(-100px)"
-    data--6000-top="transform: translateY(-400px)">
+    data-anchor-target="#TRANSICION-NUBES"
+    data-400-top="transform: translateY(0px)"
+    data--2900-top="transform: translateY(-100px)"
+    data--3900-top="transform: translateY(-400px)">
 
         <image overflow="visible" width="1920" height="1507" id="nubes_xA0_Image_3_" xlink:href="assets/images/light/10E74ABB3A7D4A6B.png"  transform="matrix(0.48 0 0 0.48 -0.4805 2015.0396)">
       </image>
@@ -161,8 +182,9 @@
     </image>
 
       <g
-      data--3500-top="transform: translateY(0px)"
-      data--5500-top="transform: translateY(200px)">
+      data-anchor-target="#TRANSICION-NUBES"
+      data-200-top="transform: translateY(0px)"
+      data--3400-top="transform: translateY(200px)">
         <image
          overflow="visible" width="792" height="813" id="plumafondo3" xlink:href="assets/images/light/10E74ABB3A7D4A97.png"  transform="matrix(0.48 0 0 0.48 540.9595 1138.1196)">
             </image>
@@ -170,16 +192,18 @@
 
 
       <g
-      data--3500-top="transform: translateY(0px)"
-      data--5500-top="transform: translateY(-200px)">
+      data-anchor-target="#TRANSICION-NUBES"
+      data-200-top="transform: translateY(300px)"
+      data--3400-top="transform: translateY(-300px)">
         <image
-         overflow="visible" width="1660" height="995" id="nublado2" xlink:href="assets/images/light/10E74ABB3A7D4A99.png"  transform="matrix(0.48 0 0 0.48 124.7998 1161.1597)">
+         overflow="visible" width="1660" height="995" id="nublado-main" xlink:href="assets/images/light/10E74ABB3A7D4A99.png"  transform="matrix(0.48 0 0 0.48 124.7998 1161.1597)">
       </image>
       </g>
 
       <g
-      data--3500-top="transform: translateY(0px)"
-      data--5500-top="transform: translateY(100px)"
+      data-anchor-target="#TRANSICION-NUBES"
+      data-200-top="transform: translateY(0px)"
+      data--3400-top="transform: translateY(100px)"
       >
         <image
          overflow="visible" width="805" height="1167" id="pincelfondo2" xlink:href="assets/images/light/10E74ABB3A7D4A9B.png"  transform="matrix(0.48 0 0 0.48 535.1997 1065.6396)">
@@ -190,9 +214,10 @@
     </image>
 
       <g
-      data--3500-top="transform: translateY(0px)"
-      data--5000-top="transform: translateY(-50px)"
-      data--5500-top="transform: translateY(-100px)"
+      data-anchor-target="#TRANSICION-NUBES"
+      data-200-top="transform: translateY(0px)"
+      data--2900-top="transform: translateY(-25px)"
+      data--3400-top="transform: translateY(-50px)"
       >
         <image overflow="visible" width="1449" height="1077" id="piedraestatua" xlink:href="assets/images/light/10E74ABB3A7D4A9F.png"  transform="matrix(0.48 0 0 0.48 0 1409.3198)">
       </image>
@@ -224,55 +249,55 @@
 
     <g id="cueva-step">
       <g id="level-2_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--9800-top="transform: translateY(0px)"
-      data--10800-top="transform: translateY(-10px)">
+      data-anchor-target="#timeline .cueva"
+      data--100-top="transform: translateY(0px)"
+      data--1100-top="transform: translateY(-10px)">
 
           <image overflow="visible" width="1920" height="1761" id="level-2_xA0_Image" xlink:href="assets/images/light/C7E1EE166DF08DE3.png"  transform="matrix(0.48 0 0 0.48 0 4257.1196)">
         </image>
       </g>
       <g id="level-1_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--9800-top="transform: translateY(0px)"
-      data--10800-top="transform: translateY(-20px)">
+      data-anchor-target="#timeline .cueva"
+      data--100-top="transform: translateY(0px)"
+      data--1100-top="transform: translateY(-20px)">
 
           <image overflow="visible" width="1920" height="1743" id="level-1_xA0_Image" xlink:href="assets/images/light/C7E1EE166DF08DE1.png"  transform="matrix(0.48 0 0 0.48 0 4265.7603)">
         </image>
       </g>
       <g id="level1_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--9800-top="transform: translateY(0px)"
-      data--10800-top="transform: translateY(-50px)">
+      data-anchor-target="#timeline .cueva"
+      data--100-top="transform: translateY(0px)"
+      data--1100-top="transform: translateY(-50px)">
 
           <image overflow="visible" width="1920" height="1806" id="level1_xA0_Image" xlink:href="assets/images/light/C7E1EE166DF08DDF.png"  transform="matrix(0.48 0 0 0.48 0 4235.52)">
         </image>
       </g>
       <g id="personaje3_xA0_Image_2_"
-      data-anchor-target="svg"
-      data--9650-top="opacity: 0;transform-origin: center;transform: scale(0.2) translate(600px, 500px);"
-      data--9850-top="opacity: 1;transform-origin: center;transform: scale(0.4) translate(500px, 200px);"
-      data--10500-top="transform-origin: center;transform: scale(1) translate(0px, 0px);"
-      data--11000-top="transform-origin: center;transform: scale(1) translate(-800px, -100px);"
+      data-anchor-target="#timeline .cueva"
+      data-50-top="opacity: 0;transform-origin: center;transform: scale(0.2) translate(600px, 500px);"
+      data--150-top="transform-origin: center;transform: scale(0.4) translate(500px, 200px);"
+      data--800-top="opacity: 1;transform-origin: center;transform: scale(1) translate(0px, 0px);"
+      data--1300-top="transform-origin: center;transform: scale(1) translate(-800px, -100px);"
       >
 
           <image overflow="visible" width="1007" height="835" id="personaje3_xA0_Image_3_" xlink:href="assets/images/light/C7E1EE166DF08E21.png"  transform="matrix(0.48 0 0 0.48 280.0801 4536.6011)">
         </image>
       </g>
       <g id="personaje2_xA0_Image_2_"
-      data-anchor-target="svg"
-      data--9650-top="opacity: 0;transform-origin: center;transform: scale(0.4) translate(500px, 0px);"
-      data--10500-top="opacity: 1;transform-origin: center;transform: scale(1) translate(0px, 0px);"
-      data--11000-top="transform-origin: center;transform: scale(1) translate(-700px, -100px);"
+      data-anchor-target="#timeline .cueva"
+      data-50-top="opacity: 0;transform-origin: center;transform: scale(0.4) translate(500px, 0px);"
+      data--800-top="opacity: 1;transform-origin: center;transform: scale(1) translate(0px, 0px);"
+      data--1300-top="transform-origin: center;transform: scale(1) translate(-700px, -100px);"
       >
 
           <image overflow="visible" width="495" height="542" id="personaje2_xA0_Image_3_" xlink:href="assets/images/light/C7E1EE166DF08E23.png"  transform="matrix(0.48 0 0 0.48 318.6001 4695.2007)">
         </image>
       </g>
       <g id="personaje1_xA0_Image_2_"
-      data-anchor-target="svg"
-      data--9650-top="opacity: 0;transform-origin: center;transform: scale(0.4) translate(900px, 200px);"
-      data--10500-top="opacity: 1;transform-origin: center;transform: scale(1) translate(0px, 0px);"
-      data--11000-top="transform-origin: center;transform: scale(1) translate(-500px, -100px);"
+      data-anchor-target="#timeline .cueva"
+      data-50-top="opacity: 0;transform-origin: center;transform: scale(0.4) translate(900px, 200px);"
+      data--800-top="opacity: 1;transform-origin: center;transform: scale(1) translate(0px, 0px);"
+      data--1300-top="transform-origin: center;transform: scale(1) translate(-500px, -100px);"
       >
 
           <image overflow="visible" width="545" height="525" id="personaje1_xA0_Image_4_" xlink:href="assets/images/light/C7E1EE166DF08E26.png"  transform="matrix(0.48 0 0 0.48 28.52 4537.7202)">
@@ -281,9 +306,9 @@
     </g>
 
     <g id="pen-completo"
-      data-anchor-target="svg"
-      data--8700-top="transform: translateY(0px)"
-      data--8800-top="transform: translateY(30px)"
+      data-anchor-target="#timeline .explosion"
+      data--500-top="transform: translateY(0px)"
+      data--600-top="transform: translateY(30px)"
     >
     <g id="pencolor_1_" enable-background="new    ">
       <g id="PENCOLOR_xA0_Image_1_">
@@ -299,63 +324,63 @@
     </g>
     <g id="trozosquexplotan_1_" enable-background="new">
       <g
-      data-anchor-target="svg"
-      data--8800-top="transform: translateX(0px);"
-      data--9500-top="transform: translateX(-37px);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateX(0px);"
+      data--1300-top="transform: translateX(-37px);"
        id="cacho7_xA0_Image_1_">
 
           <image overflow="visible" width="99" height="324" id="cacho7_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4A8F.png"  transform="matrix(0.48 0 0 0.48 418.5601 3582.7202)">
         </image>
       </g>
       <g id="cacho6_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--8800-top="transform: translateX(0px) scale(1) rotate(0deg);"
-      data--9500-top="transform-origin: center;transform: translateX(-92px) scale(2) rotate(-10deg);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateX(0px) scale(1) rotate(0deg);"
+      data--1300-top="transform-origin: center;transform: translateX(-92px) scale(2) rotate(-10deg);"
       >
 
           <image overflow="visible" width="105" height="293" id="cacho6_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4A8D.png"  transform="matrix(0.48 0 0 0.48 420.96 3695.0396)">
         </image>
       </g>
       <g id="cacho5_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--8800-top="transform: translateY(0px) translateX(0px) rotate(0deg);"
-      data--9500-top="transform-origin: center;transform: translateY(4px) translateX(-250px) rotate(-17deg);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateY(0px) translateX(0px) rotate(0deg);"
+      data--1300-top="transform-origin: center;transform: translateY(4px) translateX(-250px) rotate(-17deg);"
       >
 
           <image overflow="visible" width="98" height="233" id="cacho5_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4A81.png"  transform="matrix(0.48 0 0 0.48 420 3811.1997)">
         </image>
       </g>
       <g id="cacho4_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--8800-top="transform: translateX(0px);"
-      data--9500-top="transform-origin: center;transform: translateX(70px);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateX(0px);"
+      data--1300-top="transform-origin: center;transform: translateX(70px);"
       >
 
           <image overflow="visible" width="75" height="154" id="cacho4_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AEF.png"  transform="matrix(0.48 0 0 0.48 444.48 3819.3599)">
         </image>
       </g>
       <g id="cacho3_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--8800-top="transform: translateX(0px);"
-      data--9500-top="transform-origin: center;transform: translateX(100px);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateX(0px);"
+      data--1300-top="transform-origin: center;transform: translateX(100px);"
       >
 
           <image overflow="visible" width="81" height="226" id="cacho3_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AE1.png"  transform="matrix(0.48 0 0 0.48 442.0796 3746.3999)">
         </image>
       </g>
       <g id="cacho2_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--8800-top="transform: translateX(0px) scale(1) rotate(0deg);"
-      data--9500-top="transform-origin: center;transform: translateX(200px) scale(3) rotate(16deg);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateX(0px) scale(1) rotate(0deg);"
+      data--1300-top="transform-origin: center;transform: translateX(200px) scale(3) rotate(16deg);"
       >
 
           <image overflow="visible" width="95" height="214" id="cacho2_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AE3.png"  transform="matrix(0.48 0 0 0.48 440.6396 3680.6401)">
         </image>
       </g>
       <g id="cacho1_xA0_Image_1_"
-      data-anchor-target="svg"
-      data--8800-top="transform: translateX(0px);"
-      data--9500-top="transform: translateX(48px);"
+      data-anchor-target="#timeline .explosion"
+      data--600-top="transform: translateX(0px);"
+      data--1300-top="transform: translateX(48px);"
           >
 
           <image overflow="visible" width="66" height="249" id="cacho1_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AE6.png"  transform="matrix(0.48 0 0 0.48 444.48 3597.6001)">
@@ -363,7 +388,7 @@
       </g>
     </g>
     </g>
-    <g id="rocas-scroll_1_">
+    <g id="rocas-scroll">
       <g id="layers-ground_xA0_Image_1_">
 
           <image overflow="visible" width="1920" height="465" id="layers-ground_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AE7.png"  transform="matrix(0.48 0 0 0.48 0 4033.4399)">
@@ -417,31 +442,31 @@
     </g>
     <g id="personajes">
       <g id="personaje-derecha"
-      data-anchor-target="svg"
-      data--7600-top="transform-origin: center;transform: rotate(-126deg) scale(0.1) translate(-184px, -2500px);"
-      data--8800-top="transform-origin: center;transform: rotate(-126deg) scale(0.1) translate(-184px, -2500px);"
-      data--9500-top="transform: rotate(0deg) scale(1) translate(0px, 0px);"
+      data-anchor-target="#timeline .explosion"
+      data-top="transform-origin: center;transform: rotate(-126deg) scale(0.1) translate(-184px, -2500px);"
+      data--600-top="transform-origin: center;transform: rotate(-126deg) scale(0.1) translate(-184px, -2500px);"
+      data--1100-top="transform: rotate(0deg) scale(1) translate(0px, 0px);"
       >
 
           <image overflow="visible" width="1007" height="835" id="personaje3_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AC6.png"  transform="matrix(0.48 0 0 0.48 437.7598 3560.6401)">
         </image>
       </g>
       <g id="personaje-medio"
-      data-anchor-target="svg"
-      data--8300-top="transform-origin: center;transform: rotate(170deg) scale(0.2) translate(-1010px, 1824px);"
-      data--8600-top="transform: rotate(170deg) scale(0.2) translate(-1042px, 1988px)"
-      data--8800-top="transform: rotate(170deg) scale(0.2) translate(-1000px, 1665px)"
-      data--9500-top="transform: rotate(0deg) scale(1) translate(0px, 0px);"
+      data-anchor-target="#timeline .explosion"
+      data-top="transform-origin: center;transform: rotate(170deg) scale(0.2) translate(-1010px, 1824px);"
+      data--400-top="transform: rotate(170deg) scale(0.2) translate(-1042px, 1988px)"
+      data--600-top="transform: rotate(170deg) scale(0.2) translate(-1000px, 1665px)"
+      data--1100-top="transform: rotate(0deg) scale(1) translate(0px, 0px);"
       >
 
           <image overflow="visible" width="495" height="542" id="personaje2_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4AC9.png"  transform="matrix(0.48 0 0 0.48 186.7197 3834.2397)">
         </image>
       </g>
       <g id="personaje-izquierda"
-      data-anchor-target="svg"
-      data--7600-top="transform-origin: center; transform: rotateZ(-110deg) rotateY(180deg) scale(0.1) translate(3400px, 1950px);"
-      data--8800-top="transform-origin: center; transform: rotateZ(-110deg) rotateY(180deg) scale(0.1) translate(3400px, 1950px);"
-      data--9500-top="transform: rotateZ(0deg) rotateY(0deg) scale(1) translate(0px, 0px);"
+      data-anchor-target="#timeline .explosion"
+      data-top="transform-origin: center; transform: rotateZ(-110deg) scale(0.1) translate(3400px, 1950px);"
+      data--600-top="transform-origin: center; transform: rotateZ(-110deg) scale(0.1) translate(3400px, 1950px);"
+      data--1100-top="transform: rotateZ(0deg) scale(1) translate(0px, 0px);"
       >
 
           <image overflow="visible" width="545" height="525" id="personaje1_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4ACA.png"  transform="matrix(0.48 0 0 0.48 7.1997 3523.1997)">

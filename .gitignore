@@ -1,9 +1,7 @@
+.sass-cache
 node_modules
 dist
 .tmp
 bower_components
 test
-app/styles/fonts/glyphicons-halflings-regular.eot
-app/styles/fonts/glyphicons-halflings-regular.svg
-app/styles/fonts/glyphicons-halflings-regular.ttf
-app/styles/fonts/glyphicons-halflings-regular.woff
+assets/css
