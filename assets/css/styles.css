@@ -1,4 +1,25 @@
 svg {
   position: fixed; }
 
+#timeline {
+  position: absolute; }
+  #timeline .nubes {
+    background-color: yellow;
+    height: 2500px; }
+  #timeline .mountains {
+    background-color: black;
+    height: 2000px; }
+  #timeline .estatua {
+    background-color: aqua;
+    height: 2500px; }
+  #timeline .digistal {
+    background-color: green;
+    height: 1200px; }
+  #timeline .explosion {
+    background-color: grey;
+    height: 1500px; }
+  #timeline .cueva {
+    background-color: red;
+    height: 1300px; }
+
 /*# sourceMappingURL=styles.css.map */
