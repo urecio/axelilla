@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wiredep": "node auto-scripts/wiredep.js",
     "sass": "sass --watch assets/scss/styles.scss:assets/css/styles.css",
-    "serve": "http-server"
+    "serve": "http-server",
+    "deploy": "node auto-scripts/deploy.js"
   },
   "keywords": [],
   "author": "srcrustaceo <crustax@hotmail.com> (www.mydeveloperlife.com)",
   "license": "ISC",
   "devDependencies": {
+    "fs-extra": "^0.26.3",
     "http-server": "^0.8.5",
     "wiredep": "^3.0.0"
   }
