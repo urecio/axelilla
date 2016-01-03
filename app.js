@@ -7,7 +7,9 @@ angular.module('axApp', [])
     explosion: $('#personajes')[0].getBoundingClientRect().top,
     cueva: $('#rocas-scroll')[0].getBoundingClientRect().bottom
   };
-  $timeout(function () {
+  window.onload = function () {
+    $('#loader').hide();
+    $('#content').css('visibility', 'visible');
     skrollr.init();
-  });
+  };
 })

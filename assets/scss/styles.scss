@@ -2,6 +2,16 @@ svg {
   position: fixed;
 }
 
+#loader {
+  position: absolute;
+  top: 40vh;
+  left: 45vh;
+}
+
+#content {
+  visibility: hidden;
+}
+
 #timeline {
   position: absolute;
   .nubes {
