@@ -5,9 +5,12 @@ angular.module('axApp', [])
     estatua: $('#estatua-step')[0].getBoundingClientRect().top,
     digital: $('#digital-step')[0].getBoundingClientRect().top,
     explosion: $('#personajes')[0].getBoundingClientRect().top,
+    nubes: $('#nubes-after-estatua')[0].getBoundingClientRect().top,
     cueva: $('#rocas-scroll')[0].getBoundingClientRect().bottom
   };
-  $timeout(function () {
+  window.onload = function () {
+    $('#loader').hide();
+    $('#content').css('visibility', 'visible');
     skrollr.init();
-  });
+  };
 })

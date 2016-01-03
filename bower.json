@@ -1,0 +1,24 @@
+{
+  "name": "axelilla-complete-svg",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "srcrustaceo <crustax@hotmail.com> (www.mydeveloperlife.com)"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "~2.0.2011012602",
+    "skrollr": "~0.6.30",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8"
+  }
+}

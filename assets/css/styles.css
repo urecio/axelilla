@@ -1,6 +1,15 @@
 svg {
   position: fixed; }
 
+#loader {
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  margin-left: -60px; }
+
+#content {
+  visibility: hidden; }
+
 #timeline {
   position: absolute; }
   #timeline .nubes {
@@ -12,7 +21,10 @@ svg {
   #timeline .estatua {
     background-color: aqua;
     height: 2500px; }
-  #timeline .digistal {
+  #timeline .transicion-nubes {
+    background-color: orange;
+    height: 1500px; }
+  #timeline .digital {
     background-color: green;
     height: 1200px; }
   #timeline .explosion {
