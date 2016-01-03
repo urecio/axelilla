@@ -19,6 +19,7 @@
       <div class="nubes"></div>
       <div class="mountains"></div>
       <div class="estatua"></div>
+      <div class="transicion-nubes"></div>
       <div class="digistal"></div>
       <div class="explosion"></div>
       <div class="cueva"></div>
@@ -30,19 +31,23 @@
         data--1000-top="top:0px"
         data--2500-top="top:-{{scrollPositions.mountains}}px"
 
-        data--3200-top="top:-{{scrollPositions.mountains}}px"
+        data--2700-top="top:-{{scrollPositions.mountains}}px"
         data--4500-top="top:-{{scrollPositions.estatua}}px"
 
-        data--5900-top="top:-{{scrollPositions.estatua+200}}px"
+        data--5100-top="top:-{{scrollPositions.estatua+200}}px"
+
+        data--6000-top="top:-{{scrollPositions.nubes}}px"
+        data--6700-top="top:-{{scrollPositions.nubes}}px"
+
         data--7000-top="top:-{{scrollPositions.digital}}px"
 
         data--7000-top="top:-{{scrollPositions.digital}}px"
         data--8000-top="top:-{{scrollPositions.digital+100}}px"
 
-        data--8200-top="top:-{{scrollPositions.explosion}}px"
-        data--9600-top="top:-{{scrollPositions.explosion}}px"
+        data--8200-top="top:-{{scrollPositions.explosion-100}}px"
+        data--9800-top="top:-{{scrollPositions.explosion}}px"
 
-        data--9700-top="top:-{{scrollPositions.cueva}}px"
+        data--9900-top="top:-{{scrollPositions.cueva}}px"
         data--11000-top="top:-{{scrollPositions.cueva}}px">
     <g id="clouds-step">
 
@@ -74,29 +79,40 @@
         <image overflow="visible" width="626" height="381" id="axel-recio" xlink:href="assets/images/light/683D9A3C695D5506.png"  transform="matrix(0.48 0 0 0.48 317.2798 14.3999)">
       </image>
 
-        <image
-        data--0-top="transform: translateX(0%);"
-        data--1900-top="transform: translateX(-50%);"
-        overflow="visible" width="1327" height="768" id="nubesizquieda2" xlink:href="assets/images/light/683D9A3C695D5507.png"  transform="matrix(0.48 0 0 0.48 0 148.3198)">
+      <g
+      data--0-top="transform: translateX(0%);"
+      data--1900-top="transform: translateX(-50%);"
+      >
+      <image
+      overflow="visible" width="1327" height="768" id="nubesizquieda2" xlink:href="assets/images/light/683D9A3C695D5507.png"  transform="matrix(0.48 0 0 0.48 0 148.3198)">
       </image>
+      </g>
 
-        <image
-        data--0-top="transform: translateX(0%);"
-        data--1900-top="transform: translateX(50%);"
-         overflow="visible" width="1253" height="958" id="nubederecha2" xlink:href="assets/images/light/683D9A3C695D5519.png"  transform="matrix(0.48 0 0 0.48 320.1597 113.7603)">
+      <g
+      data--0-top="transform: translateX(0%);"
+      data--1900-top="transform: translateX(50%);"
+      >
+      <image
+       overflow="visible" width="1253" height="958" id="nubederecha2" xlink:href="assets/images/light/683D9A3C695D5519.png"  transform="matrix(0.48 0 0 0.48 320.1597 113.7603)">
       </image>
+      </g>
 
-        <image
-        data--0-top="transform: translateX(0%);"
-        data--1900-top="transform: translateX(-80%);"
-        overflow="visible" width="1920" height="883" id="nubesizquierda1" xlink:href="assets/images/light/10E74ABB3A7D4A52.png"  transform="matrix(0.48 0 0 0.48 0 73.9199)">
-      </image>
+      <g
+      data--0-top="transform: translateX(0%);"
+      data--1900-top="transform: translateX(-80%);">
 
-        <image
-        data--0-top="transform: translateX(0%);"
-        data--1900-top="transform: translateX(80%);"
-         overflow="visible" width="1106" height="890" id="nubesderecha1" xlink:href="assets/images/light/10E74ABB3A7D4A55.png"  transform="matrix(0.48 0 0 0.48 390.7197 72)">
-      </image>
+        <image overflow="visible" width="1920" height="883" id="nubesizquierda1" xlink:href="assets/images/light/10E74ABB3A7D4A52.png"  transform="matrix(0.48 0 0 0.48 0 73.9199)">
+        </image>
+      </g>
+
+      <g
+      data--0-top="transform: translateX(0%);"
+      data--1900-top="transform: translateX(80%);">
+        <image overflow="visible" width="1106" height="890" id="nubesderecha1" xlink:href="assets/images/light/10E74ABB3A7D4A55.png"  transform="matrix(0.48 0 0 0.48 390.7197 72)">
+        </image>
+      </g>
+
+
     </g>
     <g id="mountains-step">
       <g id="fondo">
@@ -107,7 +123,7 @@
       <g
       data-anchor-target="#mountains-step"
       data-500-top="opacity: 0; transform: translateY(200px)"
-      data--1500-top="opacity: 1; transform: translateY(-50px)"
+      data--2000-top="opacity: 1; transform: translateY(-50px)"
       data--2400-top="transform: translateY(-70px)"
        id="letras_2_" enable-background="new">
         <g id="to-understand-text_1_" opacity="0.6196">
@@ -171,11 +187,10 @@
           <image overflow="visible" width="1920" height="4953" id="cielo_xA0_Image" xlink:href="assets/images/light/10E74ABB3A7D4A69.png"  transform="matrix(0.48 0 0 0.48 -0.4805 1247.0396)">
         </image>
       </g>
-      <g id="nubes_xA0_Image_1_"
-      data-anchor-target="#TRANSICION-NUBES"
-      data-400-top="transform: translateY(0px)"
-      data--2900-top="transform: translateY(-100px)"
-      data--3900-top="transform: translateY(-400px)">
+      <g id="nubes-after-estatua"
+      data-anchor-target="#timeline .estatua"
+      data-800-top-bottom="transform: translateY(300px)"
+      data-top-bottom="transform: translateY(-800px)">
 
           <image overflow="visible" width="1920" height="1507" id="nubes_xA0_Image_3_" xlink:href="assets/images/light/10E74ABB3A7D4A6B.png"  transform="matrix(0.48 0 0 0.48 -0.4805 2015.0396)">
         </image>
@@ -458,9 +473,8 @@
         </g>
         <g id="personaje-medio"
         data-anchor-target="#timeline .explosion"
-        data-top="transform-origin: center;transform: rotate(170deg) scale(0.2) translate(-1010px, 1824px);"
-        data--400-top="transform: rotate(170deg) scale(0.2) translate(-1042px, 1988px)"
-        data--600-top="transform: rotate(170deg) scale(0.2) translate(-1000px, 1665px)"
+        data-top="transform-origin: center; transform: rotate(170deg) scale(0.2) translate(-1000px, 0px)"
+        data--600-top="transform: rotate(170deg) scale(0.2) translate(-1000px, 0px)"
         data--1100-top="transform: rotate(0deg) scale(1) translate(0px, 0px);"
         >
 
@@ -469,8 +483,8 @@
         </g>
         <g id="personaje-izquierda"
         data-anchor-target="#timeline .explosion"
-        data-top="transform-origin: center; transform: rotateZ(-110deg) scale(0.1) translate(3400px, 1950px);"
-        data--600-top="transform-origin: center; transform: rotateZ(-110deg) scale(0.1) translate(3400px, 1950px);"
+        data-top="transform-origin: center; transform: rotateZ(-110deg) scale(0.1) translate(-5000px, 1950px);"
+        data--600-top="transform-origin: center; transform: rotateZ(-110deg) scale(0.1) translate(-5000px, 1950px);"
         data--1100-top="transform: rotateZ(0deg) scale(1) translate(0px, 0px);"
         >
 
