@@ -8,9 +8,7 @@ angular.module('axApp', [])
     nubes: $('#nubes-after-estatua')[0].getBoundingClientRect().top,
     cueva: $('#rocas-scroll')[0].getBoundingClientRect().bottom
   };
-  window.onload = function () {
-    $('#loader').hide();
-    $('#content').css('visibility', 'visible');
+  $(document).ready(function () {
     skrollr.init();
-  };
+  });
 })
