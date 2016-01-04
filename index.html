@@ -5,6 +5,7 @@
   <title>Axa portfolio</title>
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/reset-css/reset.css" />
+  <link rel="stylesheet" href="bower_components/js-random-preloader/dist/css/random-preloader.min.css" />
   <!-- endbower -->
   <link rel="stylesheet" href="assets/css/styles.css" media="screen" title="no title" charset="utf-8">
   <link rel="icon"
@@ -13,11 +14,10 @@
 </head>
 <body ng-controller="axCtrl">
 
-  <div id="loader">
-    <img src="preloader.gif" alt="Loading...">
-  </div>
+  <div id="loader"></div>
 
   <div id="content">
+
     <div id="timeline">
       <div class="nubes"></div>
       <div class="mountains"></div>
@@ -516,6 +516,7 @@
       </g>
     </g>
     </svg>
+
   </div>
 
 
@@ -524,6 +525,7 @@
   <script src="bower_components/skrollr/src/skrollr.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/js-random-preloader/dist/js/random-preloader.min.js"></script>
   <!-- endbower -->
   <script src="app.js"></script>
 </body>

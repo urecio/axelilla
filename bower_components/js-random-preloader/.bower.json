@@ -1,0 +1,36 @@
+{
+  "name": "js-random-preloader",
+  "homepage": "https://github.com/urecio/js-random-preloader",
+  "authors": [
+    "Unai Recio <unai.recio@agcpartners.co.uk>"
+  ],
+  "description": "Random preloader javascript with percentage",
+  "main": [
+    "dist/js/random-preloader.min.js",
+    "dist/css/random-preloader.min.css"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "preloader",
+    "js",
+    "percentage",
+    "random"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "ca81c16d72",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ca81c16d720277066249917c134c02858505b646"
+  },
+  "_source": "git://github.com/urecio/js-random-preloader.git",
+  "_target": "*",
+  "_originalSource": "js-random-preloader"
+}

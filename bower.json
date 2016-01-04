@@ -19,6 +19,7 @@
     "reset-css": "~2.0.2011012602",
     "skrollr": "~0.6.30",
     "jquery": "~2.1.4",
-    "angular": "~1.4.8"
+    "angular": "~1.4.8",
+    "js-random-preloader": "*"
   }
 }
